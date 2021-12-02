@@ -1,5 +1,8 @@
 version: 2.1
 
+orbs:
+  codecov: codecov/codecov@3.1.1
+
 # Orchestrate our job run sequence
 workflows:
   build_and_test:
@@ -26,3 +29,5 @@ jobs:
       - checkout
       - run: npm install
       - run: yarn test
+      - codecov/upload:
+          file: "./coverage/lcov.info"
