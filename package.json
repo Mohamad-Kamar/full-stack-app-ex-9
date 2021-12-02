@@ -17,7 +17,7 @@
   },
   "engines": {
     "node": "16.13.1",
-    "yarn": "1.22.17"
+    "yarn": "1.22.15"
   },
   "dependencies": {
     "babel-polyfill": "^6.23.0",
