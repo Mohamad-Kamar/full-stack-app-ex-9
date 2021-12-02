@@ -16,7 +16,7 @@
     "heroku-postbuild": "yarn prod:build"
   },
   "engines": {
-    "node": "7.x",
+    "node": "16.13.1",
     "yarn": "1.22.17"
   },
   "dependencies": {
