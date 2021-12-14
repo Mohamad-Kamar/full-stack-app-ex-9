@@ -20,14 +20,14 @@ jobs:
 
     steps:
       - checkout
-      - run: npm install
+      - run: yarn
       - run: yarn prod:build
   test:
     docker:
       - image: node:16
     steps:
       - checkout
-      - run: npm install
+      - run: yarn
       - run: yarn test
       - codecov/upload:
           file: "./coverage/lcov.info"
